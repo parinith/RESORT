@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+ 
+   
+    
+<link href="signupcss/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="signupcss/bootstrap.min.js"></script>
+<script src="signupcss/jquery.min.js"></script>
+
+	
+	<link rel="stylesheet" href="signupcss/bootstrap.min.css" >
+    
+   
+	<link rel="stylesheet" href="signupcss/all.css">
+
+
+	<!--Custom styles-->
+	<link rel="stylesheet" type="text/css" href="signupcss/sigup2css.css">
+</head>
+<body>
+<div class="container">
+	<div class="d-flex justify-content-center h-100">
+		<div class="card">
+			<div class="card-header">
+				<h3>Sign In</h3>
+				
+			</div>
+			<div class="card-body">
+				<form action="signup.jsp" method="post">
+				
+	<div class="input-group form-group">
+			<!--			<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div> -->
+						<input type="text" name="usr" class="form-control" placeholder="username">
+						
+					</div>
+					<div class="input-group form-group">
+			<!--			<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div> -->
+						<input type="text" class="form-control" name="fname" placeholder="Firstname">
+						
+					</div>
+					<div class="input-group form-group">
+					<!--	<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div> -->
+						<input type="text" class="form-control" name="lname" placeholder="Lastname">
+						
+					</div>
+					<div class="input-group form-group">
+						<input type="email" name="email" value="" class="form-control input-lg" placeholder="Your Email"  />
+					</div>
+					<div class="input-group form-group">
+						<input type="password" name="pwd" value="" class="form-control input-lg" placeholder="Password" onchange='check_pass();' />
+					</div>	
+					<div class="input-group form-group">
+						<input type="password" name="confirm_password" value="" class="form-control input-lg" placeholder="Confirm Password" id="confirm_password"  onchange='check_pass();' />
+					</div>	
+				<div >
+						                    
+                        <div>
+                     <p><font color="white">Birth Date</font></p>       
+	<input type="date" name="dob" >
+	</div>
+</div>
+<br>
+					<div class="row align-items-center remember">
+						<label>Gender : </label>                    <label class="radio-inline">
+                        <input type="radio" name="gender" value="M" id=male />                        Male
+                    </label>
+                    <label class="row align-items-center remember">
+                        <input type="radio" name="gender" value="F" id=female />                        Female
+                    </label>
+					</div>	
+
+
+
+					<div class="row align-items-center remember">
+						<input type="checkbox">Remember Me
+					</div>
+					<br>
+					<span class="row align-items-center remember">By clicking Create my account, you agree to our Terms      <br> and that you have read our Data Use Policy,
+					<br> including our Cookie Use.</span>
+					<br>
+					<div class="form-group">
+						<input type="submit" value="Create" class="btn float-right login_btn">
+					</div>
+				</form>
+			</div>
+			<div class="card-footer">
+				<div class="d-flex justify-content-center links">
+					Do you have an account?<a href="log.html">Log in</a>
+				</div>
+			<!--	<div class="d-flex justify-content-center">
+					<a href="#">Forgot your password?</a>
+				</div>
+				<-->
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
